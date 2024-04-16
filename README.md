@@ -2,7 +2,7 @@
 
 This repository is to give haptic feedback by vibration to your controller which is connected to the force sensor at the manipulator
 
-First run ros1, ros2 and bridge them. (this
+First run ros1, ros2 and bridge them. (follow below link)
 
 [ROS1-ROS2 Bridge](https://github.com/kenanalperen/ros1-2)
 
@@ -21,6 +21,7 @@ rosbag play Downloads/recorded_data_FT.bag
 
 ```bash
 noetic
+foxy
 ros2 run ros1_bridge dynamic_bridge --bridge-all-topics
 ```
 
@@ -61,6 +62,7 @@ source install/setup.bash
 You can run the module by below. It will subscribe to /moca_red/ATI45_ft_handler/wrench and publish to the topics of /z_force and /joy/set_feedback
 
 ```bash
+cd ~/ros2_ws/
 ros2 run force_feedback haptic
 ```
 # Haptic Feedback
@@ -88,6 +90,11 @@ ros2 run joy joy_node
 Now you can get position data by 
 ```bash
 ros2 topic echo /joy
+```
+
+Now you can echo haptic feedback with (or for the force value, echo /z_force)
+```bash
+ros2 topic echo /joy/set_feedback
 ```
 
 You can manually give vibration by: choosing intensity between 0.0-and 1.0)

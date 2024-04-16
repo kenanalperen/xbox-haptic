@@ -2,6 +2,9 @@
 
 This repository is to give haptic feedback by vibration to your controller which is connected to the force sensor at the manipulator
 
+At the end, terminal should look similar to following:
+[haptic](https://github.com/kenanalperen/xbox-haptic/blob/main/haptic.jpg)
+
 First run ros1, ros2 and bridge them. (follow below link)
 
 [ROS1-ROS2 Bridge](https://github.com/kenanalperen/ros1-2)

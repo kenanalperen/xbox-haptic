@@ -1,5 +1,7 @@
 # xbox-haptic
 
+This repository is to give haptic feedback by vibration to your controller which is connected to the force sensor at the manipulator
+
 First run ros1, ros2 and bridge them. (this
 
 [ROS1-ROS2 Bridge](https://github.com/kenanalperen/ros1-2)
@@ -94,6 +96,6 @@ ros2 topic pub /joy/set_feedback sensor_msgs/msg/JoyFeedback "type: 1
 id: 0
 intensity: 0.5"
 ```
- There you go, you have your haptic feedback on the controller connected to the force sensor at the manipulator
+There you go!
 
 
